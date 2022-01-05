@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #f1f8fd;
+  color: #0f1f24;
+}
+
+.container {
+  padding: 0 20px;
+}
+.input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.input-area .task-add-area .task-input {
+  margin-bottom: 20px;
+  border: 2px solid #f4433659;
+  transition: 0.2s ease-in-out border;
+}
+
+.input-area .task-add-area .task-input:focus {
+  outline: none;
+  border: 2px solid #f44336;
+}
+
+.input-area .task-add-area {
+  width: fit-content;
+}
+.input-area .task-add-area .task-input,
+.input-area .task-add-area .add-btn {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.input-area .task-add-area .add-btn {
+  background-color: #f44336;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-area {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 50px;
+}
+.task-area .task-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 2px solid #0f1f24;
+  border-radius: 5px;
+  background-color: #03a9f4;
+}
+
+.task-area .task-box .task-text {
+  padding: 15px;
+  padding-right: 20px;
+}
+.task-area .task-box .remove-btn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background-color: #df4759;
+  border:  none;
+  cursor: pointer;
+  padding: 5px;
+}
